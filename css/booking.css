@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700);
+
+.brows-hotels-pic { grid-area: pic; }
+.brows-hotels-name { grid-area: nam; }
+.brows-hotels-location{ grid-area: loc; }
+.brows-hotels-rating { grid-area: rat; }
+.brows-hotels-price { grid-area: pri; }
+.brows-hotels-avail{ grid-area: ava; }
+
+.brows-hotels{
+	padding:15px;
+	background:#fff;
+	overflow:hidden;
+	transition:all ease-in-out .4s
+}
+.brows-hotels{
+	border-radius:4px;
+	margin-bottom:30px;
+	border:1px solid #e3e9ef;
+	box-shadow:0 0 10px 2px rgba(0,0,0,.05);
+	-webkit-box-shadow:0 0 10px 2px rgba(0,0,0,.05);
+	-moz-box-shadow:0 0 10px 2px rgba(0,0,0,.05);
+	/*  grid responsive code */ 
+	display: grid;
+	grid-template-areas:
+    'pic nam nam rat'
+    'pic loc loc pri'
+	'pic ava ava pri';
+	grid-template-columns: 175px auto auto 200px;
+	grid-gap: 10px;
+	padding: 10px;
+}
+.brows-hotels:hover{
+	border-left:4px solid #fc2691;
+	box-shadow:0 0 10px 2px rgba(0,0,0,.1);
+	-webkit-box-shadow:0 0 10px 2px rgba(0,0,0,.1);
+	-moz-box-shadow:0 0 10px 2px rgba(0,0,0,.1);
+}
+.brows-hotels-location,.brows-hotels-name {
+	margin-top:1em;
+	text-align: left
+}
+.brows-hotels-rating{
+	margin-top:1em;
+}
+.brows-hotels .brows-hotels-pic img{
+	max-width: 100%;
+	display: block;
+	height: auto;
+	margin: auto;
+}
+.brows-hotels .brows-hotels-location p,.brows-hotels h4{
+	margin-bottom:5px;
+	font-weight:400;
+	font-family:Montserrat,sans-serif
+}
+.brows-hotels h4{
+	color:#35434E;
+	font-size:22px;
+	margin-top:0
+}
+.brows-hotels span.brows-hotels-tagline{
+	font-family:Montserrat,sans-serif;
+	display:block;
+	color:#636d75
+}
+.brows-hotels .brows-hotels-location p{
+	color:#636d75;
+	font-size:16px
+}
+.brows-hotels .brows-hotels-rating p{
+	color:#fc2691
+}
+
+.brows-hotels-avail p,.brows-hotels-price p,.brows-hotels-rating p{
+	margin-bottom: 2px;
+}
+
+/*  */
+.brows-hotels{
+		border-left:none;
+		border-top:4px solid #fff;
+		text-align:center
+}
+
+/*  grid responsive code */ 
+@media (max-width: 840px) {
+	.brows-hotels{
+		grid-template-columns: 160px auto auto 158px;
+	}
+}
+
+/*  grid responsive code */ 
+@media (max-width: 600px) {
+	.brows-hotels{
+		grid-template-columns: 160px auto auto 100px;
+	}
+}
+
+@media (max-width: 500px) {
+	.brows-hotels{
+		grid-template-areas:
+		'pic pic nam rat'
+		'pic pic loc loc'
+		'ava ava pri pri';
+		grid-template-columns: 180px auto auto auto auto;
+	}
+	.brows-hotels-location,.brows-hotels-name,.brows-hotels-rating{
+		margin-top: 0.3em;
+	}
+	.brows-hotels .brows-hotels-location p,.brows-hotels h4{
+		font-weight:200;
+		margin-bottom:1px;
+	}
+	.brows-hotels .brows-hotels-location p{
+		font-size:8px
+	}
+	.brows-hotels span.brows-hotels-tagline{
+		font-size: 0.7rem;
+	}
+}
+
+/* to display in single , this is the last size */
+
+@media (max-width: 400px) {
+	.brows-hotels{
+
+		grid-template-areas:
+		'pic pic pic'
+		'nam nam nam'
+		'loc loc loc'
+		'rat ava ava'
+		'rat pri pri';
+		grid-template-columns: auto auto auto;
+	}
+	.brows-hotels-location,.brows-hotels-name {
+		margin-top: 0.5em;
+		text-align: center;
+	}
+	.brows-hotels .brows-hotels-location p,.brows-hotels h4{
+		font-weight:150;
+		margin-bottom:1px;
+	}
+	.brows-hotels .brows-hotels-location p{
+		font-size:8px
+	}
+}
+
+
+
