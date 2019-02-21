@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Pacifico','Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -118,6 +118,9 @@ section h2 {
   color: #fdcc52;
 }
 
+.phoneNo{
+  font-size: 2em;
+}
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;

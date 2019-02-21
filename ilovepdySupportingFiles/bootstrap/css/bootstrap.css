@@ -469,6 +469,8 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+  box-shadow: 0 69px 174px rgba(15, 189, 236, 1);
+  border-radius: 10px;
 }
 
 .img-thumbnail {
@@ -567,7 +569,7 @@ pre code {
   }
 }
 
-.container-fluid {
+.aboutTheCity {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -4175,7 +4177,7 @@ input[type="button"].btn-block {
 }
 
 .navbar > .container,
-.navbar > .container-fluid {
+.navbar > .aboutTheCity {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -4264,7 +4266,7 @@ input[type="button"].btn-block {
 
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
-  .navbar-expand-sm > .container-fluid {
+  .navbar-expand-sm > .aboutTheCity {
     padding-right: 0;
     padding-left: 0;
   }
@@ -4289,7 +4291,7 @@ input[type="button"].btn-block {
     padding-left: 0.5rem;
   }
   .navbar-expand-sm > .container,
-  .navbar-expand-sm > .container-fluid {
+  .navbar-expand-sm > .aboutTheCity {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
@@ -4306,7 +4308,7 @@ input[type="button"].btn-block {
 
 @media (max-width: 767.98px) {
   .navbar-expand-md > .container,
-  .navbar-expand-md > .container-fluid {
+  .navbar-expand-md > .aboutTheCity {
     padding-right: 0;
     padding-left: 0;
   }
@@ -4331,7 +4333,7 @@ input[type="button"].btn-block {
     padding-left: 0.5rem;
   }
   .navbar-expand-md > .container,
-  .navbar-expand-md > .container-fluid {
+  .navbar-expand-md > .aboutTheCity {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
@@ -4348,7 +4350,7 @@ input[type="button"].btn-block {
 
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
-  .navbar-expand-lg > .container-fluid {
+  .navbar-expand-lg > .aboutTheCity {
     padding-right: 0;
     padding-left: 0;
   }
@@ -4373,7 +4375,7 @@ input[type="button"].btn-block {
     padding-left: 0.5rem;
   }
   .navbar-expand-lg > .container,
-  .navbar-expand-lg > .container-fluid {
+  .navbar-expand-lg > .aboutTheCity {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
@@ -4390,7 +4392,7 @@ input[type="button"].btn-block {
 
 @media (max-width: 1199.98px) {
   .navbar-expand-xl > .container,
-  .navbar-expand-xl > .container-fluid {
+  .navbar-expand-xl > .aboutTheCity {
     padding-right: 0;
     padding-left: 0;
   }
@@ -4415,7 +4417,7 @@ input[type="button"].btn-block {
     padding-left: 0.5rem;
   }
   .navbar-expand-xl > .container,
-  .navbar-expand-xl > .container-fluid {
+  .navbar-expand-xl > .aboutTheCity {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
@@ -4438,7 +4440,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-expand > .container,
-.navbar-expand > .container-fluid {
+.navbar-expand > .aboutTheCity {
   padding-right: 0;
   padding-left: 0;
 }
@@ -4458,7 +4460,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-expand > .container,
-.navbar-expand > .container-fluid {
+.navbar-expand > .aboutTheCity {
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
 }
